@@ -17,7 +17,7 @@
 
 
   txtInput.addEventListener("keyup", () => {
-		filter = txtInput.value.toLowerCase();
+		filter = txtInput.value.toLowerCase().replace(/[A-Z0-9]/ig, "");
 	  if(filter) {
 		return checkBtn.classList.add("active");
 	  }
