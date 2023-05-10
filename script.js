@@ -20,6 +20,7 @@ checkBtn.addEventListener('click', () => {
 })
 
 txtInput.addEventListener('keyup', () => {
+  //removing spaces and all special characters from entered value
   filter = txtInput.value.toLowerCase().replace(/[^A-Z0-9]/ig, '')
   if (filter) {
     return checkBtn.classList.add('active')
